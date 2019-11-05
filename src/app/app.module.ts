@@ -12,6 +12,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PayComponent } from './pay/pay.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FocusDirective } from './focus.directive';
+import {MatDialogModule} from '@angular/material/dialog';
+import { HelpdialogComponent } from './helpdialog/helpdialog.component';
+import { GalleryDialogComponent } from './gallery-dialog/gallery-dialog.component';
 
 @NgModule({
   imports: [
@@ -23,6 +26,7 @@ import { FocusDirective } from './focus.directive';
     MatButtonModule,
     MatToolbarModule,
     CommonModule,
+    MatDialogModule,
     CrystalLightboxModule,
     MatIconModule,
     HttpClientModule
@@ -30,7 +34,13 @@ import { FocusDirective } from './focus.directive';
   declarations: [
     AppComponent,
     PayComponent,
-    FocusDirective
+    FocusDirective,
+    HelpdialogComponent,
+    GalleryDialogComponent
+  ],
+  entryComponents: [
+    HelpdialogComponent,
+    GalleryDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

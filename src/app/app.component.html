@@ -24,36 +24,31 @@
 </div> -->
 </div>
 <div lightbox-group style="position: relative;">
-  <p class="wrapper wrapper--w680  text-center">
-    <img src="./assets/1.jpg" lightbox
-      [fullImage]="{path: './assets/1.jpg' }" />
-    <img src="./assets/2.jpg" lightbox
-      [fullImage]="{path: './assets/2.jpg' }" />
-    <img src="./assets/3.jpg" lightbox
-      [fullImage]="{path: './assets/3.jpg' }" />
-    <img src="./assets/4.jpg" lightbox
-      [fullImage]="{path: './assets/4.jpg' }" />
-      <img src="./assets/5.jpg" lightbox *ngIf="!phone"
-      [fullImage]="{path: './assets/5.jpg' }" />
-      <img src="./assets/6.jpg" lightbox *ngIf="!phone"
-      [fullImage]="{path: './assets/6.jpg' }" />
+  <p class="wrapper wrapper--w680  text-center gal">
+    <img src="./assets/1.jpg" lightbox [fullImage]="{path: './assets/1.jpg' }" />
+    <img src="./assets/2.jpg" lightbox [fullImage]="{path: './assets/2.jpg' }" />
+    <img src="./assets/3.jpg" lightbox [fullImage]="{path: './assets/3.jpg' }" />
+    <img src="./assets/4.jpg" lightbox [fullImage]="{path: './assets/4.jpg' }" />
+    <img src="./assets/5.jpg" lightbox *ngIf="!phone" [fullImage]="{path: './assets/5.jpg' }" />
+    <img src="./assets/6.jpg" lightbox *ngIf="!phone" [fullImage]="{path: './assets/6.jpg' }" />
   </p>
 </div>
 
 
 
-<div class="mt-4 page-wrapper bg-gra-02  p-b-100 font-poppins" >
-  <div class="wrapper wrapper--w680">
-    <div class="card card-4" #top>
-      <div class="d-flex justify-content-around" style="position: absolute; top:5px; right: 5px;">
-        <i class="fab fa-facebook-f px-1"></i>
-        <i class="fab fa-instagram px-1"></i>
-        <i class="fab fa-twitter px-1"></i>
-        <i class="fab fa-linkedin-in px-1"></i>
+<div class="mt-4 page-wrapper bg-gra-02  p-b-100 font-poppins ">
+  <div class="wrapper wrapper--w680 ">
+    <div class="card card-4 top bgbg" #top>
+      <div class="d-flex justify-content-around" style="position: absolute; top:10px; right: 5px;">
+        <a href="https://www.facebook.com/profile.php?id=100043129777484" target="_blank" class="a"><i
+            class="fab fa-facebook-f px-1 icon"></i></a>
+        <a href="https://www.instagram.com/metalletters123/" target="_blank" class="a"><i
+            class="fab fa-instagram px-1 icon"></i></a>
+        <a href="https://twitter.com/otiotbayit123" target="_blank" class="a"><i class="fab fa-twitter px-1 icon"></i></a>
+        <a class="ag" style="cursor: pointer;" (click)="openDialog('gallery')">גלריה</a>
       </div>
-      <div class="card-body">
-        <h1 class="title text-right"><a href="#buy"><b>הזמן</b>/<b>י עכשיו</b></a> אותיות חוץ לביתך</h1>
-
+      <div class="card-body mt-4">
+        <h1 class="title text-right topicc"><a href="#buy"><b>הזמן</b>/<b>י עכשיו</b></a> אותיות חוץ לביתך</h1>
         <!-- <div class="row row-space">
                       <div class="col-6 ">
                           <div class="input-group">
@@ -119,60 +114,106 @@
                           </div>
                       </div>
                   </div> -->
-<p class="text-right" style="font-size:1.2rem">
-     <b> אנו מתמחים בשלטים לבתים פרטיים, שלטים מכל סוגי החומרים:</b><br>
-        עץ, מתכת, פי וי סי, זכוכית, פרספקס ועוד.
-        <br>
-        שלט לבית משמש גם כמידע למבקר – שם המתגורר וכתובת, וגם כקבלת פנים לאורח!
-    ועל כן עליו להיות מיוחד ובעל נראות גבוהה.
-    <br>
-        השלטים שאנו מייצרים הינם באיכות גבוהה, הן מבחינת החומרים והן מבחינת העיצוב והנראות, 
-        גם ההתאמה האישית לצרכיי הלקוח וטעמו משחקים תפקיד חשוב.
-        אנו נשתדל להתאים עבורכם את השלט שייצג אתכם ואת ביתכם
-        בצורה הטובה והיעילה ביותר, תוך ייעוץ מניסיונינו העשיר על הטוב ביותר עבורכם.
-        <br>
-        שלט לבית מייצג אתכם ומהווה כרטיס ביקור שלכם ועל כן עליו להיות מושך, עיצובי, עכשווי ואיכותי.
-        <br>
-        האותיות מגיעות עם פינים אחוריים להרחקה וסקיצה להתקנה עצמית. ישנה אפשרות להתקנה שלנו
-        שילוט אלומיניום תעופתי בעובי 4 מ”מ לבית פרטי מתאים לכל קיר חיצוני, טיח, גבס או לבנים, וגם לקירות פנימיים בלובי
-        שילוט אותיות מתכת הינו יוקרתי מאוד ובולט מאוד. ניתן לקבלו בכל גופן, כל גודל וכל גוון.
-      </p>
-      <h3 class=" mt-3 text-right" id="buy">
-        כל שנותר לכם הוא רק לבחור:
-      </h3>
-      <div class="row row-space">
-        <div class="col-6" >
+        <p class="text-center" style="font-size:1.2rem;">
+          <b>הזמן שלט ייחודי ומעוצב לביתך:</b><br>
+          <br>
+          שלטים דקורטיבים לכניסה לבית עשויים 100% אלומינים צבועים בתנור,
+          לא מחלידים ועמידים למשך שנים התקנה פשוטה ומהירה בעזרת 2 ברגים.
+          <br>
+          שלט לבית משמש גם כמידע למבקר, שם המתגורר וכתובת, וגם כקבלת פנים לאורח!
+          ועל כן עליו להיות מיוחד ובעל נראות גבוהה.
+          <br>
+          השלטים שאנו מייצרים הינם באיכות גבוהה, הן מבחינת החומרים והן מבחינת העיצוב והנראות.<br>
+          שלט לבית מייצג אתכם ומהווה כרטיס ביקור שלכם ועל כן עליו להיות מושך, עיצובי, עכשווי ואיכותי.
+          <br>
+          שילוט אותיות מתכת הינו יוקרתי מאוד ובולט מאוד. ניתן לקבלו במספר גוונים, ניתן להזמין בכול שפה, משלוח חינם לכל
+          חלקי הארץ.
+        </p>
+        <h3 class=" mt-3 text-right" id="buy">
+          כל שנותר לכם הוא רק לבחור:
+        </h3>
+        <div class="row row-space" style="margin-top: 30px;">
+          <div class="col-6">
             <div class="input-group">
-                    <mat-form-field>
-                        <mat-label>בחר צבע</mat-label>
-                        <mat-select #dcolor [(value)]="pay.product.color" (openedChange)="pay.makefile()">
-                          <mat-option *ngFor="let color of colors" [value]="color.value">
-                            {{color.viewValue}}
-                          </mat-option>
-                        </mat-select>
-                      </mat-form-field>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="input-group">
-                        <mat-form-field >
-                          <input #dtext  [value]="pay.text" (input)="pay.text = dtext.value; pay.makefile()" appFocus matInput placeholder="הכנס מלל (עד 10 תווים)" maxlength="10">
-                        </mat-form-field>
-                          </div>
-                </div>
-         
+              <mat-form-field>
+                <mat-label>* בחר צבע</mat-label>
+                <mat-select #dcolor [(value)]="pay.product.color" (openedChange)="pay.makefile()">
+                  <mat-option  *ngFor="let color of colors" [ngClass]="{'c1200': color.id === '1200' ? true : false, 'c9005': color.id === '9005' ? true : false, 'c9016': color.id === '9016' ? true : false, 'c2040': color.id === '2040' ? true: false}" [value]="color.value">
+                    {{color.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="input-group d-flex flex-row flex-nowrap">
+              <mat-form-field>
+                <mat-label>* בחר כיוון שלט</mat-label>
+                <mat-select #dlang [(value)]="pay.product.dir">
+                  <mat-option *ngFor="let d of dir" [value]="d.value">
+                    {{d.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+              <a (click)="openDialog()" style="cursor: pointer;"><i class="material-icons" style="color:blue;">
+                  help
+                </i></a>
+            </div>
+
+          </div>
+
         </div>
-        <div class="mt-3 text-center">
-          <button class="btn btn--radius-2 btn--blue" [disabled]="disabled" (click)="payReady(); disabled = true; appendDiv()"> בצע הזמנה </button>
+        <div class="row row-space">
+          <span style="text-align: center; margin-right:15px;">אנא מלא/י אחד מן השדות הבאים על מנת שנוכל ליצור איתך קשר
+            במידת הצורך:</span>
+
+          <div class="col-6">
+            <div class="input-group">
+              <mat-form-field>
+                <input #dphone [value]="pay.signDets.phone" type="number" appFocus
+                  (input)="pay.signDets.phone = dphone.value" appFocus matInput placeholder="טלפון ליצירת קשר"
+                  maxlength="10">
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="input-group">
+              <mat-form-field>
+                <input #demail [value]="pay.signDets.email" (input)="pay.signDets.email = demail.value;" email appFocus
+                  matInput placeholder="אי-מייל ליצירת קשר">
+              </mat-form-field>
+            </div>
+          </div>
         </div>
+        <div class="row row-space">
+          <div class="col-12">
+            <div class="input-group">
+              <mat-form-field>
+                <input #dtext [value]="pay.text" (input)="pay.text = dtext.value; pay.makefile()" appFocus matInput
+                  placeholder="* הכנס מלל לשלט (שם משפחה רחוב ומספר בית)">
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 text-center" *ngIf="!pay.paidFor; else paid">
+          <button class="btn btn--radius-2 btn--blue" [disabled]="disabled" (click)="payReady();"> בצע הזמנה - 399 ש"ח
+          </button>
+        </div>
+        <ng-template #paid>
+          <div class="mt-3 text-center">
+            <button class="btn btn--radius-2 btn--blue" [disabled]="!disabled" (click)="reload()"> בצע הזמנה נוספת
+            </button>
+          </div>
+        </ng-template>
         <p class="text-center">
-        <i class="material-icons">
+          <i class="material-icons">
             lock
-            </i> התשלום מאובטח באמצעות PayPal
-          </p>
+          </i> התשלום מאובטח באמצעות PayPal
+        </p>
         <app-pay></app-pay>
-        <h4 style="margin-top:10px; position: absolute; bottom: 5px; right: 0;left:0" class="text-center"> לפרטים: אביעד
-          דייני 050-5555555 | אופיר 050-5555555</h4>
+        <h4 style="margin-top:30px; " class="text-center bottom"> לפרטים: אביעד
+          דייני aviadd22@gmail.com</h4>
       </div>
     </div>
   </div>

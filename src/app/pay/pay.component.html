@@ -1,9 +1,97 @@
-<div #test >
-    
-</div>
+<!-- <div #test style="text-align: center;">
 
-<div *ngIf="paidFor">
-        is
+</div> -->
+
+<div *ngIf="paidFor" style="text-align: center;">
+        <h3>ההזמנה בוצעה בהצלחה!</h3>
+        <p>פרטי ההזמנה:</p>
+        <div class="row row-space">
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="colors[product.color]" placeholder="צבע">
+                                </mat-form-field>
+                        </div>
+                </div>
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="dir[product.dir]" placeholder="כיוון">
+                                </mat-form-field>
+                        </div>
+                </div>
+        </div>
+
+        <div class="row row-space">
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="text" placeholder="מלל">
+                                </mat-form-field>
+                        </div>
+                </div>
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="shipping.city" placeholder="עיר">
+                                </mat-form-field>
+                        </div>
+                </div>
+        </div>
+        <div class="row row-space">
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="shipping.address" placeholder="כתובת">
+                                </mat-form-field>
+                        </div>
+                </div>
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="shipping.address2 ? shipping.address2 : ''"
+                                                placeholder="כתובת 2">
+                                </mat-form-field>
+                        </div>
+                </div>
+
+        </div>
+        <div class="row row-space">
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="shipping.zipcode" placeholder="מיקוד">
+                                </mat-form-field>
+                        </div>
+                </div>
+                <div class="col-6">
+                        <div class="input-group">
+                                <mat-form-field>
+                                        <input matInput disabled [value]="signDets.phone" placeholder="טלפון">
+                                </mat-form-field>
+                        </div>
+                </div>
+
+        </div>
+        <div class="row row-space">
+                        <div class="col-6">
+                                        <div class="input-group">
+                                                <mat-form-field>
+                                                        <input matInput disabled [value]="shipping.name" placeholder="שם">
+                                                </mat-form-field>
+                                        </div>
+                                </div>
+                        <div class="col-6">
+                                <div class="input-group">
+                                        <mat-form-field>
+                                                <input matInput disabled [value]="shipping.oid" placeholder="מספר הזמנה">
+                                        </mat-form-field>
+                                </div>
+                        </div>
+        
+                </div>
+       
 </div>
-<div #paypal style="position:relative">
-<div class="overlay-div">בחר שיטת תשלום</div>
+<div #paypal style="position:relative" [ngStyle]="{'display': paidFor ? 'none' : 'block'}">
+        <div class="overlay-div">בחר שיטת תשלום</div>
+</div>

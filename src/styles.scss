@@ -281,6 +281,9 @@
     color: #525252;
     font-weight: 400;
     margin-bottom: 40px;
+    a {
+      text-decoration: underline;
+    }
   }
   
   /* ==========================================================================
@@ -338,7 +341,14 @@
       width: 200px;
       height: 180px;
       object-fit: cover;
+     @media screen and (max-width: 400px) {
+      
+        width: 170px;
+        height: 150px;
+        object-fit: cover;
+       
      
+     }
     }
   }
   #buttons-container > div > div.paypal-button.paypal-button-number-0.paypal-button-layout-vertical.paypal-button-shape-rect.paypal-button-number-multiple.paypal-button-env-sandbox.paypal-button-color-gold.paypal-logo-color-blue.paypal-button-clicked {
@@ -364,4 +374,18 @@
 //       margin: auto;
 //       text-align: center;
 //   }
-  
+.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  font-size: 1.1rem;
+ 
+}
+.mat-form-field-label {
+  font-weight: bold !important;
+  color: black !important;
+  @media screen and (max-width: 500px) {
+    font-size: .9rem !important;
+  }
+}
+.mat-active {
+  background-color: none !important;
+  background: none !important;
+}
