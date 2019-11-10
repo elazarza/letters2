@@ -1,27 +1,6 @@
-<div
+<div *ngIf="!phone"
   style="position: absolute;width:100%;height: 80vh !important; background:url('./assets/picture_5.jpg') no-repeat; ">
 
-  <!-- <div id="carouselExampleControls" class="carousel slide mx-auto my-auto" data-interval="3000"  data-pause="false" style="width:50%;height: 50vh !important;" data-ride="carousel">
-  <div class="carousel-inner" style="height: 80vh !important;overflow: hidden;">
-    <div class="carousel-item active" style="height: auto !important;">
-      <img src="./assets/picture_1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item" style="height: auto !important;">
-      <img  src="./assets/picture_4.jfif" alt="Second slide">
-    </div>
-    <div class="carousel-item" style="height: auto !important;">
-      <img  src="./assets/picture_3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
 </div>
 <div lightbox-group style="position: relative;">
   <p class="wrapper wrapper--w680  text-center gal">
@@ -29,16 +8,20 @@
     <img src="./assets/2.jpg" lightbox [fullImage]="{path: './assets/2.jpg' }" />
     <img src="./assets/3.jpg" lightbox [fullImage]="{path: './assets/3.jpg' }" />
     <img src="./assets/4.jpg" lightbox [fullImage]="{path: './assets/4.jpg' }" />
-    <img src="./assets/5.jpg" lightbox *ngIf="!phone" [fullImage]="{path: './assets/5.jpg' }" />
-    <img src="./assets/6.jpg" lightbox *ngIf="!phone" [fullImage]="{path: './assets/6.jpg' }" />
+    <img src="./assets/5.jpg" lightbox [fullImage]="{path: './assets/5.jpg' }" />
+    <img src="./assets/6.jpg" lightbox [fullImage]="{path: './assets/6.jpg' }" />
+    <img src="./assets/127.jpeg" lightbox *ngIf="phone" [fullImage]="{path: './assets/127.jpeg' }" />
+    <img src="./assets/130.jpeg" lightbox *ngIf="phone" [fullImage]="{path: './assets/130.jpeg' }" />
+
   </p>
 </div>
 
 
 
-<div class="mt-4 page-wrapper bg-gra-02  p-b-100 font-poppins ">
+<div class="mt-4 page-wrapper   p-b-100 font-poppins ">
   <div class="wrapper wrapper--w680 ">
     <div class="card card-4 top bgbg" #top>
+        <div style="background-color: rgba(255, 255, 255, 0.075); width:100%; height: 100%;">
       <div class="d-flex justify-content-around" style="position: absolute; top:10px; right: 5px;">
         <a href="https://www.facebook.com/profile.php?id=100043129777484" target="_blank" class="a"><i
             class="fab fa-facebook-f px-1 icon"></i></a>
@@ -48,74 +31,10 @@
         <a class="ag" style="cursor: pointer;" (click)="openDialog('gallery')">גלריה</a>
       </div>
       <div class="card-body mt-4">
-        <h1 class="title text-right topicc"><a href="#buy"><b>הזמן</b>/<b>י עכשיו</b></a> אותיות חוץ לביתך</h1>
-        <!-- <div class="row row-space">
-                      <div class="col-6 ">
-                          <div class="input-group">
-                              <mat-form-field >
-                                <input matInput placeholder="שם פרטי" >
-                              </mat-form-field>
-                          </div>
-                      </div>
-                      <div class="col-6 d-flex justify-content-start">
-                          <div class="input-group" >
-                            <mat-form-field >
-                              <input matInput placeholder="שם משפחה" >
-                            </mat-form-field>
-                          </div>
-                      </div>
-                  </div>
-               
-                  <div class="row row-space">
-                    <div class="col-6" >
-                        <div class="input-group">
-                      <mat-form-field >
-                        <input matInput placeholder="עיר" >
-                      </mat-form-field>
-                    </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="input-group">
-                      <mat-form-field >
-                        <input matInput placeholder="רחוב" >
-                      </mat-form-field>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-space">
-                  <div class="col-6">
-                      <div class="input-group">
-                    <mat-form-field >
-                      <input matInput placeholder="מספר בית" >
-                    </mat-form-field>
-                      </div>
-                  </div>
-                  <div class="col-6">
-                      <div class="input-group">
-                    <mat-form-field >
-                      <input matInput placeholder="מיקוד" >
-                    </mat-form-field>
-                  </div>
-                  </div>
-              </div>
-                  <div class="row row-space">
-                      <div class="col-6">
-                          <div class="input-group">
-                        <mat-form-field >
-                          <input email matInput placeholder="אי-מייל" >
-                        </mat-form-field>
-                          </div>
-                      </div>
-                      <div class="col-6">
-                          <div class="input-group">
-                        <mat-form-field >
-                          <input type="tel" matInput placeholder="טלפון" >
-                        </mat-form-field>
-                          </div>
-                      </div>
-                  </div> -->
-        <p class="text-center" style="font-size:1.2rem;">
-          <b>הזמן שלט ייחודי ומעוצב לביתך:</b><br>
+        <h1 class="title text-center topicc" style="margin:10px !important"><a href="#buy" style="color: black;">שילת שלטי אלומיניום</a></h1>
+    
+        <p class="text-center" style="font-size:1.2rem; font-weight: bold;">
+          הזמן שלט ייחודי ומעוצב לביתך:<br>
           <br>
           שלטים דקורטיבים לכניסה לבית עשויים 100% אלומינים צבועים בתנור,
           לא מחלידים ועמידים למשך שנים התקנה פשוטה ומהירה בעזרת 2 ברגים.
@@ -135,7 +54,7 @@
         <div class="row row-space" style="margin-top: 30px;">
           <div class="col-6">
             <div class="input-group">
-              <mat-form-field>
+              <mat-form-field style="background-color: rgba(255, 255, 255, 0.671); padding:5px; border-radius: 5%;">
                 <mat-label>* בחר צבע</mat-label>
                 <mat-select #dcolor [(value)]="pay.product.color" (openedChange)="pay.makefile()">
                   <mat-option  *ngFor="let color of colors" [ngClass]="{'c1200': color.id === '1200' ? true : false, 'c9005': color.id === '9005' ? true : false, 'c9016': color.id === '9016' ? true : false, 'c2040': color.id === '2040' ? true: false}" [value]="color.value">
@@ -147,7 +66,7 @@
           </div>
           <div class="col-6">
             <div class="input-group d-flex flex-row flex-nowrap">
-              <mat-form-field>
+              <mat-form-field style="background-color: rgba(255, 255, 255, 0.671); padding:5px; border-radius: 5%;">
                 <mat-label>* בחר כיוון שלט</mat-label>
                 <mat-select #dlang [(value)]="pay.product.dir">
                   <mat-option *ngFor="let d of dir" [value]="d.value">
@@ -164,12 +83,12 @@
 
         </div>
         <div class="row row-space">
-          <span style="text-align: center; margin-right:15px;">אנא מלא/י אחד מן השדות הבאים על מנת שנוכל ליצור איתך קשר
+          <span style="text-align: center; margin-right:15px; font-weight: bold;">אנא מלא/י אחד מן השדות הבאים על מנת שנוכל ליצור איתך קשר
             במידת הצורך:</span>
 
           <div class="col-6">
             <div class="input-group">
-              <mat-form-field>
+              <mat-form-field style="background-color: rgba(255, 255, 255, 0.671); padding:5px; border-radius: 5%;">
                 <input #dphone [value]="pay.signDets.phone" type="number" appFocus
                   (input)="pay.signDets.phone = dphone.value" appFocus matInput placeholder="טלפון ליצירת קשר"
                   maxlength="10">
@@ -178,7 +97,7 @@
           </div>
           <div class="col-6">
             <div class="input-group">
-              <mat-form-field>
+              <mat-form-field style="background-color: rgba(255, 255, 255, 0.671); padding:5px; border-radius: 5%;">
                 <input #demail [value]="pay.signDets.email" (input)="pay.signDets.email = demail.value;" email appFocus
                   matInput placeholder="אי-מייל ליצירת קשר">
               </mat-form-field>
@@ -188,7 +107,7 @@
         <div class="row row-space">
           <div class="col-12">
             <div class="input-group">
-              <mat-form-field>
+              <mat-form-field style="background-color: rgba(255, 255, 255, 0.671); padding:5px; border-radius: 5%;">
                 <input #dtext [value]="pay.text" (input)="pay.text = dtext.value; pay.makefile()" appFocus matInput
                   placeholder="* הכנס מלל לשלט (שם משפחה רחוב ומספר בית)">
               </mat-form-field>
@@ -197,7 +116,7 @@
         </div>
 
         <div class="mt-3 text-center" *ngIf="!pay.paidFor; else paid">
-          <button class="btn btn--radius-2 btn--blue" [disabled]="disabled" (click)="payReady();"> בצע הזמנה - 399 ש"ח
+          <button class="btn btn--radius-2 btn--blue" [disabled]="disabled" (click)="payReady();" style="line-height: 1.9rem;"> בצע הזמנה - 399 ש"ח<br><span>משלוח חינם לכל חלק הארץ</span>
           </button>
         </div>
         <ng-template #paid>
@@ -215,6 +134,6 @@
         <h4 style="margin-top:30px; " class="text-center bottom"> לפרטים: אביעד
           דייני aviadd22@gmail.com</h4>
       </div>
-    </div>
+    </div></div>
   </div>
 </div>

@@ -16,9 +16,11 @@
   }
 }
 .bgbg {
+  @media screen and (min-width: 500px) {
   background-color: rgba(255, 255, 255, 0.616);
   background-image: url("/assets/13.jpeg");
   background-repeat: no-repeat;
+  }
 }
 .top {
   .icon {
