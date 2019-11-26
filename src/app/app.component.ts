@@ -75,6 +75,7 @@ export class AppComponent implements OnInit {
     }
     
   }
+
   payReady() {
     if (!this.dtext.nativeElement.value) {
       alert('אנא הכנס מלל.');

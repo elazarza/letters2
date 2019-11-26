@@ -52,7 +52,7 @@ export class PayComponent implements OnInit {
     private conService: ConService
   ) { }
   product = {
-    price: 399,
+    price: 329,
     description: 'אותיות מתכת לבית',
     color: 'black',
     lang: 'heb',

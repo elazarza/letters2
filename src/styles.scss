@@ -86,13 +86,7 @@
     margin: 0;
     padding: 0;
   }
-  body {
-    @media screen and (max-width: 500px) {
-    background-image: url("/assets/12.jfif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  }
+  
   /**
    * Remove trailing margins from nested lists.
    */
@@ -226,9 +220,9 @@
     max-width: 680px;
   }
   
-  /* ==========================================================================
-     #BUTTON
-     ========================================================================== */
+//   /* ==========================================================================
+//      #BUTTON
+//      ========================================================================== */
   .btn {
     display: inline-block;
     line-height: 50px;
@@ -266,9 +260,9 @@
   
   
   
-  /* ==========================================================================
-     #FORM
-     ========================================================================== */
+//   /* ==========================================================================
+//      #FORM
+//      ========================================================================== */
  
   
   .input-group {
@@ -331,14 +325,14 @@
   }
 
   
-//   .basic-container {
-//     padding: 5px;
-//   }
+  .basic-container {
+    padding: 5px;
+  }
   
-//   .version-info {
-//     font-size: 8pt;
-//     float: right;
-//   }
+  .version-info {
+    font-size: 8pt;
+    float: right;
+  }
   
   div[lightbox-group] {
     display: flex;
@@ -395,4 +389,8 @@
 .mat-active {
   background-color: none !important;
   background: none !important;
+}
+body {
+  background-color: rgb(27, 27, 27);
+
 }

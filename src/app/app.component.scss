@@ -1,97 +1,97 @@
-// img {
-//     max-width:100% !important;
-//     max-height:100% !important;
-//     min-width:100% !important;
-//     min-height:100% !important;
+// // img {
+// //     max-width:100% !important;
+// //     max-height:100% !important;
+// //     min-width:100% !important;
+// //     min-height:100% !important;
+// // }
+// // button {
+// //     margin-right: 0;
+// //   }
+// //   img {
+// //     margin: 0 !important;
+// //   }
+// .gal {
+//   @media screen and (max-width: 500px) {
+//     margin-top: 15px;
+//   }
 // }
-// button {
-//     margin-right: 0;
+// .bgbg {
+//   @media screen and (min-width: 500px) {
+//   background-color: rgba(255, 255, 255, 0.616);
+//   background-image: url("/assets/13.jpeg");
+//   background-repeat: no-repeat;
 //   }
-//   img {
-//     margin: 0 !important;
+// }
+// .top {
+.icon {
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+  padding: 0 !important;
+}
+.icon:hover {
+  color: rgb(71, 71, 71);
+}
+//   .a {
+//     margin-left:10px;
+//     background-color: rgb(15, 58, 94);
+//     border: 1px solid rgb(219, 219, 219);
+//     border-radius: 10px;
+//     padding: 7px;
+//     width:40px;
+//     height: 40px;
+//     text-align: center;
 //   }
-.gal {
-  @media screen and (max-width: 500px) {
-    margin-top: 15px;
-  }
-}
-.bgbg {
-  @media screen and (min-width: 500px) {
-  background-color: rgba(255, 255, 255, 0.616);
-  background-image: url("/assets/13.jpeg");
-  background-repeat: no-repeat;
-  }
-}
-.top {
-  .icon {
-    font-size: 1.4rem;
-    color: white;
-    padding: 0 !important;
-  }
-  .icon:hover {
-    color: rgb(211, 211, 211);
-  }
-  .a {
-    margin-left:10px;
-    background-color: rgb(15, 58, 94);
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 10px;
-    padding: 7px;
-    width:40px;
-    height: 40px;
-    text-align: center;
-  }
-  .ag {
-    margin-left:10px;
-    background-color: rgb(15, 58, 94);
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 10px;
-    padding: 7px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    font-family: tahoma;
-  }
-  .ag:hover {
-    color: rgb(211, 211, 211);
-  }
-}
+//   .ag {
+//     margin-left:10px;
+//     background-color: rgb(15, 58, 94);
+//     border: 1px solid rgb(219, 219, 219);
+//     border-radius: 10px;
+//     padding: 7px;
+//     height: 40px;
+//     color: white;
+//     text-align: center;
+//     font-family: tahoma;
+//   }
+//   .ag:hover {
+//     color: rgb(211, 211, 211);
+//   }
+// }
 .bottom {
   @media screen and (max-width: 500px) {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-  img:hover {
-    filter:brightness(1.2);
-        -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-      transition: all .5s ease;
-  }
-  img {
-     -webkit-transition: all 0.5s ease-in;
-      -moz-transition: all 0.5s ease-in;
-      -o-transition: all 0.5s ease-in;
-      -ms-transition: all 0.5s ease-in;
-      transition: all 0.5s ease-in;
-     margin: 2px;
-  }
-button {
-  @media screen and (max-width: 500px) {
-    font-size: 1rem;
-    padding:10px;
-    margin-bottom: 10px;
-  }
-}
-.topicc {
-  @media screen and (max-width:500px) {
-    font-size: 1.4rem;
-  }
-}
+// html {
+//   scroll-behavior: smooth;
+// }
+//   img:hover {
+//     filter:brightness(1.2);
+//         -webkit-transition: all .5s ease;
+//       -moz-transition: all .5s ease;
+//       -o-transition: all .5s ease;
+//       -ms-transition: all .5s ease;
+//       transition: all .5s ease;
+//   }
+//   img {
+//      -webkit-transition: all 0.5s ease-in;
+//       -moz-transition: all 0.5s ease-in;
+//       -o-transition: all 0.5s ease-in;
+//       -ms-transition: all 0.5s ease-in;
+//       transition: all 0.5s ease-in;
+//      margin: 2px;
+//   }
+// button {
+//   @media screen and (max-width: 500px) {
+//     font-size: 1rem;
+//     padding:10px;
+//     margin-bottom: 10px;
+//   }
+// }
+// .topicc {
+//   @media screen and (max-width:500px) {
+//     font-size: 1.4rem;
+//   }
+// }
 
 .c1200 {
   background-image: url("/assets/1200.jpg") !important;
@@ -108,4 +108,203 @@ button {
 .c2040 {
   background-image: url("/assets/2040.jpg") !important;
   color: black !important;
+}
+
+.icon-button {
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -180px 0px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes backgroundScroll {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -180px 0px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes slide1 {
+  0% {
+    padding-right: 60%;
+  }
+  50% {
+    padding-right: 30%;
+  }
+  100% {
+    padding-right: 10%;
+  }
+}
+@keyframes slide2 {
+  0% {
+    padding-right: 60%;
+  }
+  50% {
+    padding-right: 30%;
+  }
+  100% {
+    padding-right: 12%;
+  }
+}
+@keyframes slide3 {
+  0% {
+    padding-right: 60%;
+  }
+  50% {
+    padding-right: 30%;
+  }
+  100% {
+    padding-right: 10%;
+  }
+}
+@keyframes slide4 {
+  0% {
+    padding-right: 60%;
+  }
+  50% {
+    padding-right: 30%;
+  }
+  100% {
+    padding-right: 15%;
+  }
+}
+.bg {
+  color: #fff;
+  text-align: center;
+  background-image: url("/assets/bgbg2.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-size: 60%;
+    background-position: 60% !important;
+  }
+  font-size: 12px;
+  font-family: "Dancing Script", cursive;
+  -webkit-animation: backgroundScroll 30s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation: backgroundScroll 30s linear infinite;
+  animation-fill-mode: forwards;
+}
+img {
+  border-radius: 10px;
+}
+section#showcase {
+  width: 100%;
+  background-color: rgb(27, 27, 27);
+  margin-top: 0;
+  box-sizing: border-box;
+}
+#showcase-slideshow {
+  width: 90%;
+  margin: auto;
+}
+/****slideshow****/
+.csl-inner {
+  height: 275px !important;
+  @media screen and (min-width: 480px) {
+    height: 400px !important;
+  }
+  @media screen and (min-width: 700px) {
+    height: 600px !important;
+  }
+  z-index: 0;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.csl-ind {
+  border: 0.3px solid black !important;
+}
+.csl-icon {
+  padding: 10px !important;
+  background-color: black;
+}
+
+.carousel-item > img {
+  object-fit: cover !important;
+}
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Heebo&display=swap");
+.heebo1 {
+  -webkit-animation: slide1 1s linear 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: slide1 1s linear 1;
+  animation-fill-mode: forwards;
+  color: white;
+}
+.heebo2 {
+  -webkit-animation: slide1 1s linear 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: slide2 1s linear 1;
+  animation-fill-mode: forwards;
+  color: rgb(203, 204, 203);
+  // @media screen and (min-width: 1000px) {
+  //   color:rgb(82, 82, 82);
+
+  // }
+}
+.heebo3 {
+  -webkit-animation: slide1 1s linear 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: slide3 1s linear 1;
+  animation-fill-mode: forwards;
+  color: rgb(203, 204, 203);
+  // @media screen and (min-width: 1000px) {
+  //   color:rgb(82, 82, 82);
+
+  // }
+}
+.heebo4 {
+  -webkit-animation: slide1 1s linear 1;
+  -webkit-animation-fill-mode: forwards;
+  animation: slide4 1s linear 1;
+  animation-fill-mode: forwards;
+  color: rgb(203, 204, 203);
+  // @media screen and (min-width: 1000px) {
+  //   color: rgb(82, 82, 82);
+
+  // }
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -225px;
+}
+.maincont {
+  @media screen and (min-width: 1200px) {
+    border-right: 2px solid rgb(121, 121, 121);
+    border-left: 2px solid rgb(121, 121, 121);
+    margin: auto;
+    text-align: center;
+    width: 50%;
+  }
+}
+.spantext {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  margin: auto;
+  margin-bottom: 5px;
+  @media screen and (max-width: 500px) {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
