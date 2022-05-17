@@ -2,7 +2,7 @@
 
 </div> -->
 
-<div *ngIf="paidFor" style="text-align: center;">
+<div *ngIf="paidFor" style="text-align: center; background-color: #e1e1e1;" dir="rtl">
         <h3>ההזמנה בוצעה בהצלחה!</h3>
         <p>פרטי ההזמנה:</p>
         <div class="row row-space">
@@ -92,6 +92,6 @@
                 </div>
        
 </div>
-<div #paypal style="position:relative" [ngStyle]="{'display': paidFor ? 'none' : 'block'}">
+<div #paypal style="position:relative; background-color: #e1e1e1;" [ngStyle]="{'display': paidFor ? 'none' : 'block'}">
         <div class="overlay-div">בחר שיטת תשלום</div>
 </div>

@@ -1,0 +1,18 @@
+<p>צפיות לפי תאריכים:</p>
+
+<table>
+    <th>
+        מספר צפיות
+    </th>
+    <th>
+        תאריך
+    </th>
+    <tr *ngFor="let view of views">
+        <td>
+            {{view.number}}
+        </td>
+        <td>
+            {{view.date}}
+        </td>
+    </tr>
+</table>

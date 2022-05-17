@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { FocusDirective } from './focus.directive';
 import {MatDialogModule} from '@angular/material/dialog';
 import { HelpdialogComponent } from './helpdialog/helpdialog.component';
 import { GalleryDialogComponent } from './gallery-dialog/gallery-dialog.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   imports: [
@@ -36,13 +37,14 @@ import { GalleryDialogComponent } from './gallery-dialog/gallery-dialog.componen
     PayComponent,
     FocusDirective,
     HelpdialogComponent,
-    GalleryDialogComponent
+    GalleryDialogComponent,
+    CounterComponent
   ],
   entryComponents: [
     HelpdialogComponent,
     GalleryDialogComponent
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
